@@ -7,8 +7,8 @@ body {
 	font-family: 'Roboto', sans-serif;
 	background-color: whitesmoke;
 }
-box1 {
-	background-color: #f54b64;
+#side-bad {
+	background-color: #99aab5;
 }
 @media (min-width: 700px) {
 	#grid-container {
