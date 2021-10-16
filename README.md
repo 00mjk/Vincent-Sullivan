@@ -1,4 +1,4 @@
-# vs-profile
+# profile
 My personal Profile website
 
 
