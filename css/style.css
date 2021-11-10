@@ -91,10 +91,10 @@ html{
 }
 
 /* PROJECT GRID */
-.grid{
+/* .grid{ */
 	/* padding-right: 200px */
 	/* margin-bottom: 50px; */
-}
+/* } */
 .col1 {
 	padding-right: 50px;
 	margin-right: 10px;
@@ -119,9 +119,9 @@ html{
 	background-color: #99aab5;
 	border-radius: 20px;
 }
-.row1{
+/* .row1{
 
-}
+} */
 .grid-left {
 	border-radius: 10px;
 	gap: 10px;
@@ -197,7 +197,7 @@ html{
 	gap: 10px 10px;
 	grid-auto-flow: row;
 	width:100%
-	grid-template-areas: 
+	grid-template-areas
     "aboutme-l aboutme-l aboutme-r"
     ". . ."
     ". . ."; 
