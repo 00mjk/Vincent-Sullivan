@@ -91,6 +91,10 @@ html{
 }
 
 /* PROJECT GRID */
+.grid{
+	/* padding-right: 200px */
+	/* margin-bottom: 50px; */
+}
 .col1 {
 	padding-right: 50px;
 	margin-right: 10px;
@@ -113,7 +117,7 @@ html{
 .box {
 	border-left-color: black;
 	background-color: #99aab5;
-	border-radius: 10px;
+	border-radius: 20px;
 }
 .row1{
 
@@ -127,15 +131,21 @@ html{
 }
 
 .container {
+	width: 60%;
+	float: right;
 	display: grid;
 	grid-template-columns: 300px 1fr 1fr;
 	grid-template-rows: 300px 1fr 1fr;
 	gap: 10px 10px;
 	grid-auto-flow: column dense;
+	grid-auto-flow: row;
+	padding-bottom: 50px;
+	padding-right: 100px;
 	grid-template-areas:
 	  ". Project Project"
 	  ". project2 project3"
 	  ". project4 project5";
+	  /* ". work . ."; */
   }
   
   .Project {
@@ -144,29 +154,108 @@ html{
 	gap: 10px 10px;
 	grid-auto-flow: row dense;
 	grid-area: Project;
-	height: 200px;
+	/* height: 200px; */
   }
+  .work-container{
+	/* border: 1% solid red; */
+	  /* border: solid #2f3136 10px; */
+	border:#2f3136;
+	height: 210%;
+	/* background-color: white; */
+	margin-right: 20px;
+	float: left;
+	width: 30%;
+	margin-left: 30px;
+	/* border-color: #6cf; */
+	/* margin-left: 30px;
+	padding-left: 100px;
+	padding-right: 50px;
+	border-width: 10px; */
+	/* border-color:#2f3136; */
+}
+.work{
+	border-right: 15px solid red;
+	/* border: solid #2f3136 10px; */
+	/* background-color: #333; */
+	/* border-color:#2f3136; */
+	float: left;
+	width: 40%;
+	/*
+    border: 10px;
+	*/
+	margin-left: 175px;
+	height:100%;
+	padding-left: 30px;
+	/* padding-right: 50px; */
+	/* border-width: 20px; */ 
+	/* border-color:#2f3136; */
+}
+.container-aboutme {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr; 
+	grid-template-rows: 1fr 1fr 1fr; 
+	gap: 10px 10px;
+	grid-auto-flow: row;
+	width:100%
+	grid-template-areas: 
+    "aboutme-l aboutme-l aboutme-r"
+    ". . ."
+    ". . ."; 
+  }
+  .aboutme-l { grid-area: aboutme-l; }
+  .aboutme-r { grid-area: aboutme-r; }
+
+  .aboutme-r{
+	  background-color: #2f3136;
+	  height:100px;
+	  width: 50%;
+  }
+  .aboutme-l{
+	  width: 40%;
+  }
+/*   
+  .aboutme-l { grid-area: aboutme-l; }
+  .aboutme-r { grid-area: aboutme-r; } */
   
+  .project1 { grid-area: project1; }
   .project2 { grid-area: project2; }
-  
   .project3 { grid-area: project3; }
-  
   .project4 { grid-area: project4; }
-  
   .project5 { grid-area: project5; }
+  /* .work { grid-area: work; } */
+
+  /* .container {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: 1fr 1fr 1fr;
+	gap: 0px 0px;
+	grid-auto-flow: row;
+	grid-template-areas:
+	  "work project1 project1"
+	  "work . ."
+	  "work . .";
+  }
+   */
+ 
+  
+
   
   /* FOOTER */
-
-#footer .social-media-icons  {
+.footer{
+	padding-top:100px;
+}
+.footer-content .social-media-icons  {
 	/* position:absolute; */
+	padding-top: 100px;
+	margin-top: 50px;
 	display:flex;
 	background-color: linearGradient(60);
-	right: 0;
+	/* right: 0; */
 	bottom: 0;
-	left: 0;
+	/* left: 0; */
 	width: 100%;
 	height: 150px; 
-	background-color: #6cf;
+	background-color: #333333;
 	clear: both;
 	display:flex;
 	/* margin-bottom: 35px; */
