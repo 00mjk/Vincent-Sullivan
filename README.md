@@ -1,28 +1,41 @@
-😁 vlsulliv / README.md
-
 # Hi, I'm Vincent Sullivan! 🙋
 
-colorScheme
-#E6F514
-#0C1113
-#EF437F
-#CCCCCC
-#E75555
+😁 vlsulliv / README.md
 
 ## profile
-My personal Profile website
+
+A personal profile created with html and css. 
+
+## Folder Structure
+
+profile
+│- .gitignore
+│- index.html
+│- LICENSE
+│- README.md
+|
+└───assets
+    ├─css
+    │   └─reset.css
+    │   └─style.css
+    └─img
+        └─be_someone.png
+        └─ripped_banners.jpg
+
+## Screenshot
+
+<img src="./assets/img/Profile.png">
 
 ## Contact Me
-[Gmail](vlsullivanhou@gmail.com)
-[Yahoo](vlsulliv@yahoo.com)
-[slack](vince_)
-[linkedIn](https://linkedin.com/vlsulliv/)
-[GitHub](https://github.com/vlsulliv)
+[Gmail](vlsullivanhou@gmail.com)<br>
+[Yahoo](vlsulliv@yahoo.com)<br>
+[slack](vince_)<br>
+[linkedIn](https://linkedin.com/vlsulliv/)<br>
+[GitHub](https://github.com/vlsulliv)<br>
 
 ## Credit
-[justicon icons](https://dribbble.com/Justicon)
+[justicon](https://dribbble.com/Justicon)<br>
 
 ## License
-```
-MIT
-```
+
+[MIT](https://choosealicense.com/licenses/mit/)
