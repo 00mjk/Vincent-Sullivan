@@ -8,6 +8,7 @@ A personal profile created with html and css.
 
 ## Folder Structure
 
+```
 profile
 │- .gitignore
 │- index.html
@@ -21,6 +22,7 @@ profile
     └─img
         └─be_someone.png
         └─ripped_banners.jpg
+```
 
 ## Screenshot
 
