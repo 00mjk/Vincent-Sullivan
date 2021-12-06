@@ -1,11 +1,13 @@
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Quicksand&display=swap');
+
 /***************************
     ALL PAGE ELEMENTS
 ***************************/
 
-* {
-	padding: 0;
-	margin: 0;
+html {
 	box-sizing: border-box;
+	font-size: 16px;
 }
 
 html {
