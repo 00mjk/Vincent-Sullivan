@@ -25,7 +25,7 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-family: 'Roboto Mono', monospace;
   color: var(--primary);
   background-color: var(--light);
   line-height: 1.5;
@@ -279,22 +279,27 @@ h2 {
 
 .project1 {
 	background-image: url("../img/note-taker.png");
+	width: 100%;
 }
   
 .project2 {
 	background-image: url("../img/Strong-Password-Generator.jpg");
+	width: 100%;
 }
   
 .project3 {
 	background-image: url("../img/dynamite-recipes.png");
+	width: 100%;
 }
   
 .project4 {
 	background-image: url("../img/Weather-dashboard-v2.png");
+	width: 100%;
 }
 
 .project5 {
 	background-image: url("../img/scheduler.png");
+	width: 100%;
 }
 
 
@@ -363,4 +368,8 @@ h2 {
 	  align-items: flex-start;
 	}
   }
+  
+/***************************
+    	DARK MODE
+***************************/
   
