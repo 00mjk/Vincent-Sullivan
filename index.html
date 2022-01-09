@@ -2,34 +2,32 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <title>Vincent</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta charset="UTF-8" />
+  <title>VS 🧩</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" type="text/css" href="./assets/css/style.css" />
-  <link href="./assets/img/favicon/android-chrome-192x192.png">
+  <link href="./assets/img/favicon/android-chrome-192x192.png" />
 </head>
 
 <body>
-
-  <!-- Nav -->
   <header>
     <h1>Vincent</h1>
     <nav>
-      <a href="#about">About Me</a>
-      <a href="#work">Work</a>
-      <a href="#contact">Contact Me</a>
-      <a href="https://bit.ly/343AxQU" onclick="window.open(this.href); return false;" onkeypress="window.open(this.href); return false;">Resume</a>
+      <!-- <ul class="nav-menu"> -->
+        <a href="#about" class="item">About Me</a>
+        <a href="#work" class="item">Work</a>
+        <a href="#contact" class="item">Contact Me</a>
+        <a href="https://bit.ly/343AxQU" class="item" target="_blank">Resume</a>
+      <!-- </ul> -->
     </nav>
   </header>
 
-  <!-- hero  -->
   <section class="hero-banner">
     <div>
       <h2>TGDev</h2>
     </div>
   </section>
 
-  <!-- Main -->
   <main class="page-wrapper">
 
   <!--About Me -->
@@ -37,51 +35,62 @@
     <h2>About Me</h2>
     <div>
       <p>
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quia laboriosam itaque beatae recusandae amet neque explicabo id repellat aliquam enim, labore fugit, accusamus rerum odit, cum fuga corrupti delectus suscipit.
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Hic, consequatur accusantium eos facilis animi nisi!
+        Minus fugiat repudiandae vitae nemo deserunt! Eveniet porro veniam explicabo vero, facilis quidem quis est.
       </p>
       <p>
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsum officia ad voluptates corrupti esse, earum ab incidunt ratione aliquam quam enim in repellendus a laudantium cupiditate hic vel totam excepturi!
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima ex nisi quas, maiores optio, consectetur iure
+        debitis perspiciatis cum, laboriosam vitae! Enim nemo architecto labore dicta error voluptates aspernatur
+        animi.
       </p>
     </div>
   </section>
 
-  <!--Projects -->
   <section class="page-section" id="work">
     <h2>Work</h2>
     <div class="flex-container">
 
-      <!---------------------->
-      <a class="project1 flex-item" id="note-taker" href="https://vlsulliv.github.io/note-taker/" target="_blank">
+      <!-- START OF WORK -->
+      <!-- P1 -->
+      <a href="https://vlsulliv.github.io/note-taker/" target="_blank" text="Hello, this is the tooltip"
+        class="project1 flex-item" id="note-taker">
         <div>
           <h3>Work Day Scheduler</h3>
-          <!-- <span>Day Scheduler</span> -->
         </div>
       </a>
-      <a class="project2 flex-item" id="gen-password" href="https://vlsulliv.github.io/GenPassword/" target="_blank">
+      <!-- P1 -->
+      <!-- P2 -->
+      <a href="https://vlsulliv.github.io/GenPassword/" target="_blank" class="project2 flex-item" id="gen-password">
         <div>
           <h3>Password Generator</h3>
-          <!-- <span>Quickly get random passwords<br> to increase online security</span> -->
         </div>
       </a>
-      <a class="project3 flex-item" id="dynamite-recipes" href="https://vlsulliv.github.io/Project-1/" target="_blank">
+      <!-- P2 -->
+      <!-- P3 -->
+      <a href="https://vlsulliv.github.io/Project-1/" target="_blank" class="project3 flex-item"
+        id="dynamite-recipes">
         <div>
           <h3>Dynamite Recipes</h3>
-          <!-- <span>Returns recipe options based<br> on available ingredients</span> -->
         </div>
       </a>
-      <a class="project4 flex-item" id="weather-dashboard" href="https://vlsulliv.github.io/WeatherDashboard/" target="_blank">
+      <!-- P3 -->
+      <!-- P4 -->
+      <a href="https://vlsulliv.github.io/WeatherDashboard/" target="_blank" class="project4 flex-item"
+        id="weather-dashboard">
         <div>
           <h3>Weather Dashboard</h3>
-          <!-- <span>Quickly view weather data<br> based on enter location</span> -->
         </div>
       </a>
-      <a class="project5 flex-item" id="scheduler" href="https://vlsulliv.github.io/work-day-scheduler/" target="_blank">
+      <!-- P4 -->
+      <!-- P5 -->
+      <a href="https://vlsulliv.github.io/work-day-scheduler/" target="_blank" class="project5 flex-item"
+        id="scheduler">
         <div>
           <h3>Day Scheduler</h3>
-          <!-- <span>An easy way to plan<br> your day & track tasks</span> -->
         </div>
       </a>
-      <!---------------------->
+      <!-- P5 -->
+      <!-- END OF WORK -->
 
     </div>
   </section>
@@ -92,16 +101,18 @@
     <div>
       <address>
         <a href="tel:281-330-8004">Phone</a>
-        <a href="mailto:vlsullivanhou@gmail.com">Email</a>
-        <a href="https://www.github.com/vlsulliv">GitHub</a>
-        <a href="https://www.linkedin.com/in/vlsullivan/">Linkedin</a>
-        <a href="https://open.spotify.com/user/vsully">Spotify</a>
+        <a href="mailto:vlsullivanhou@gmail.com"><h3>Email</h3></a>
+        <a href="https://www.github.com/vlsulliv"><h3>GitHub</h3></a>
+        <a href="https://www.linkedin.com/in/vlsullivan/"><h3>Linkedin</h3></a>
+        <a href="https://open.spotify.com/user/vsully"><h3>Spotify</h3></a>
       </address>
     </div>
   </section>
+  </main>
 
+  <script src="./assets/js/moment-with-locales.js"></script>
+  <script src="./assets/js/r.js"></script>
   <script src="./assets/js/script.js"></script>
 
-  </main>
-  </body>
+</body>
 </html>
