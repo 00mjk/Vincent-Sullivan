@@ -1,5 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital@1&family=Vollkorn&display=swap');
 
+:root {
+  --primary:rgba(28, 29, 33, 1);
+  --secondary: rgba(146, 204, 206, 1);
+  --tertiary:rgba(49, 52, 61, 1);
+  --light: rgba(238, 238, 247, 1);
+  --secondary: hsl(74, 100%, 43%);
+	--darkreader-black: #131516;
+	--darkreader-blue: #004daa;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -18,19 +28,6 @@ h1, h2, h3, h4, p {
 }
 
 /***************************
-    	COLOR PALETTE
-***************************/
-
-:root {
-  --primary:rgba(28, 29, 33, 1);
-  --secondary: rgba(146, 204, 206, 1);
-  --tertiary:rgba(49, 52, 61, 1);
-  --light: rgba(238, 238, 247, 1);
-  --secondary: hsl(74, 100%, 43%);
-	--accent: rgb(219, 0, 168);
-}
-
-/***************************
     	NAVBAR
 ***************************/
 
@@ -42,7 +39,7 @@ header {
 	flex-wrap: wrap;
 	align-items: center;
 	background-color: var(--tertiary);
-	box-shadow: 0 5px 35px rgba(146, 204, 206, 0.4);
+	box-shadow: 0 5px 35px rgba(146, 204, 206, 1);
 }
 
 header h1 {
@@ -73,47 +70,69 @@ nav a {
     font-size: 1.4rem; 
 }
 
-/* nav a:link {
+nav a:link {
 	color: var(--secondary);
-}
-
-nav a:visited {
-  color: var(--accent);
-} */
+} 
 
 nav a:hover {
 	background-size: 100% 100%;
 	color: var(--primary);
 }
 
-/* nav a:active {
-	color:var(--accent);
+/* .hero {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("photographer.jpg");
+  Set a specific height */
+  /* height: 750px; */
+	/* max-height: 600px;
+	justify-content: center;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	text-align: center; */
+  /* Position and center the image to scale nicely on all screens */
+  /* background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
 } */
 
-nav a:last-child {
-	margin-right: 0;
+.hero text {
+	/* max-height: 120px; */
+	justify-content: center;
+	display: flex;
+	flex-direction: row;
+	text-align: center;
+	font-size: 15px;
 }
 
-main {
+#about p {
+	font-size: 12px;
+
+}
+
+.name {
+	font-size: 25px;
+	font-family: Sans;
+}
+
+
+/* main {
 	margin-top: 20px;
 	margin-bottom: 45px;
-}
+} */
 
-.hamburger {
-	display: none;
-}
 /***************************
 			HERO IMG
 ***************************/
 
-.hero-banner {
+.hero {
 	background: rgb(68, 88, 120);
 	background-image: url("../img/be_someone.png");
 	/* linear-gradient(180deg, var(--secondary) 0%,; */
 	background-size: cover;
 	background-position: center;
 	background-blend-mode: soft-light;
-	min-height: 35vh;
+	max-height: 185px;
 	color: var(--light);
 	padding: 2% 6%;
 	display: flex;
@@ -121,37 +140,35 @@ main {
 	align-items: flex-end;
 	text-align: right;
 	box-shadow: 20px 10px 10px grey;
+	/* height: 1000vw; */
 }
 
-.hero-banner div {
-	flex: 0 0 90%;
-}
-  
-.hero-banner h2 {
+ 
+/* .hero herotext {
 	background-color: var(--secondary);
 	color: var(--tertiary);
+	flex: 0 0 90%;
 	margin: 0;
 	padding: 5px 10px;
 	font-size: 2.3rem;
 	line-height: 1.2;
 	display: inline;
-}
+} */
   
+/***************************
+   	  About Me
+***************************/
 .page-wrapper {
-	max-width: 80%;
+	max-width: 88%;
 	margin-left: auto;
 	margin-right: auto;
 }
 
-/***************************
-   	  About Me
-***************************/
-
 h2 {
   display: block;
   font-size: 1.5em;
-  /* margin-block-start: 0.83em;
-  margin-block-end: 0.83em; */
+  margin-block-start: 0.83em;
+  margin-block-end: 0.83em;
   margin-inline-start: 0px;
   margin-inline-end: 0px;
   font-weight: bold;
@@ -170,7 +187,7 @@ h2 {
   flex-wrap: wrap;
   align-items: stretch;
   justify-content: space-between;
-	padding-top: 75px;
+	padding-top: 32px;
 }
   
 .page-section > h2 {
@@ -190,21 +207,12 @@ h2 {
   flex: 0 0 77%;
 }
 
-/***************************
-    	MAIN CONTENT
-***************************/
-
-.page-wrapper {
-	max-width: 88%;
-	margin-left: auto;
-	margin-right: auto;
-}
 
 /***************************
     	PROJECTS
 ***************************/
 
-.flex-item {
+.projects {
 	border: 5px solid var(--secondary);
 	background-color: var(--primary);
 	color: var(--tertiary);
@@ -219,36 +227,33 @@ h2 {
 	background-blend-mode: soft-light;
 	background-size: 100%;
 	transition: all 0.5s;
-	font-size: 0.9rem;
+	flex-basis: 600%;
 }
 
 .flex-container {
 	display: flex;
 	flex-wrap: wrap;
-	justify-content: center;
+	/* justify-content: center; */
 }
 
-.flex-item:first-child {
-	min-height: 400px;
-	flex-basis: 100%;
+.projects:first-child {
+	/* min-height: 300px; */
+	flex-basis: 600%;
+	min-width: "44";
 }
 
-.flex-item:hover {
+.projects:hover {
 	background-color: rgba(0, 0, 0, 0.3);
+	flex-basis: 600%;
 }
 
-.flex-item div {
+.projects div {
 	background-color: var(--secondary);
-	padding: 8px 10px;
+	flex-basis: 600%;
+	/* padding: 8px 10px; */
+	flex-basis: 600%;
 }
 
-.flex-item h3 {
-	font-size: 1.5rem;
-}
-
-#gen-password {
-	width: 45px;
-}
 
 /***************************
     	FOOTER
@@ -286,112 +291,54 @@ h2 {
    		HOVER IMGS
 ***************************/
 
-.project1 {
+.p1 {
 	background-image: url("../img/note-taker.png");
-	width: 100%;
+	/* border-radius: 0.5rem 0.5rem 0 0; */
+  /* object-fit: cover;
+  aspect-ratio: 2/3; */
+	/* margin-top:25; */
+	/* width: 40%; */
+	/* max-width:200px; */
+	max-height:100px;
+	width: auto ;
+	max-width: 100% ;
+	/* height: auto ; */
+	max-width:415px;
+	/* max-height:100px; */
+	height:50%;
 }
 
-.project2 {
+.p2 {
 	background-image: url("../img/Strong-Password-Generator.jpg");
-	width: 100%;
+	width: 40%;
+	max-width:200px;
+	max-height:100px;
 }
 
-.project3 {
+.p3 {
 	background-image: url("../img/dynamite-recipes.png");
-	width: 100%;
+	width: 40%;
+	max-width:200px;
+	max-height:100px;
 }
 
-.project4 {
+.p4 {
 	background-image: url("../img/Weather-dashboard-v2.png");
-	width: 100%;
+	width: 40%;
+	max-width:200px;
+	max-height:100px;
 }
 
-.project5 {
+.p5 {
 	background-image: url("../img/scheduler.png");
-	width: 100%;
+	width: 40%;
+	max-width:200px;
+	max-height:100px;
 }
 
 /***************************
-    RESPONSIVNESS
+    NAV HANDLING
 ***************************/
-
-/* NAV */
-@media screen and (max-width: 980px) {
-  header {
-    padding: 0 0 10px 0;
-    justify-content: center;
-    text-align: center;
-  }
-
-  header h1 {
-    width: 100%;
-    padding: 25px;
-    margin-bottom: 10px;
-    font-size: 8vw;
-  }
-
-  header nav {
-    justify-content: center;
-  }
-
-	nav {
-		font-size: 2vw;
-		justify-content: center;
-		padding: 5px;
-		flex-direction: row;
-		align-items: center;
-		/* width: 20px; */
-		text-decoration: none;
-		background-image: none;
-	}
-
-	a:link {
-	  text-decoration: none;
-		/* color: var(--secondary); */
-		width: 100%;
-		font-size: 2.5vw;
-		background-image: none;
-		line-height: 10px;
-	}
-
-	.page-section > h2,
-	.page-section > div {
-		flex: 0 0 100%;
-	}
-
-	.page-section > h2 {
-	  border-right: none;
-	  border-bottom: 4px solid var(--primary);
-	  margin-bottom: 20px;
-	  padding-bottom: 10px;
-	  text-align: left;
-	  font-size: 7vw;
-	}
-
-	.page-section h2 {
-		text-align: center;
-		font-size: 4vw;
-	}
-}
-
-/* PROJECTS */
-@media screen and (max-width: 980) {
-  .flex-item,
-  .flex-item:first-child {
-    flex-basis: 100%;
-  }
-
-  .flex-item:first-child {
-    min-height: 150px;
-  }
-
-  .hero-banner {
-    justify-content: center;
-    text-align: center;
-  }
-
-  .contact address {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-}
+/* .text {color:#5d8aa8;}
+.background {background-color:#5d8aa8;}
+.border {border:1px solid #5d8aa8;} */

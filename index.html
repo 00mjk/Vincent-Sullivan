@@ -1,106 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8" />
-  <title>VS 🧩</title>
+  <title>Vincent</title>
+  <link rel="./assets/img/favicon/android-chrome-192x192.png" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" type="text/css" href="./assets/css/style.css" />
-  <link href="./assets/img/favicon/android-chrome-192x192.png" />
+  <link rel='stylesheet' media='all' href="./assets/css/style.css" />
+  <link rel="stylesheet" type="text/css" href="./assets/css/media-queries.css" />
+  <!-- <link rel='stylesheet' media='print' href='print.css' /> -->
+  <link rel="stylesheet" media="screen and (min-width: 701px)"" href="medium.css" />
 </head>
-
 <body>
   <header>
     <h1>Vincent</h1>
-    <nav>
-      <!-- <ul class="nav-menu"> -->
-        <a href="#about" class="item">About Me</a>
-        <a href="#work" class="item">Work</a>
-        <a href="#contact" class="item">Contact Me</a>
-        <a href="https://bit.ly/343AxQU" class="item" target="_blank">Resume</a>
-      <!-- </ul> -->
-    </nav>
-  </header>
-
-  <section class="hero-banner">
     <div>
-      <h2>TGDev</h2>
+      <nav>
+        <div class="nav-menu">
+          <a href="#about" class="item">About Me</a>
+          <a href="#work" class="item">Work</a>
+          <a href="#contact" class="item">Contact Me</a>
+          <a href="https://bit.ly/343AxQU" class="item" target="_blank">Resume</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+  <section class="hero">
+    <div class="herotext">
+      <h2>⯅TGDev</h2>
     </div>
   </section>
-
   <main class="page-wrapper">
-
-  <!--About Me -->
   <section class="page-section" id="about">
     <h2>About Me</h2>
     <div>
+      <span class="name"><b>Vincent Sullvan</b></span>
+      <br>
       <p>
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Hic, consequatur accusantium eos facilis animi nisi!
-        Minus fugiat repudiandae vitae nemo deserunt! Eveniet porro veniam explicabo vero, facilis quidem quis est.
-      </p>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima ex nisi quas, maiores optio, consectetur iure
-        debitis perspiciatis cum, laboriosam vitae! Enim nemo architecto labore dicta error voluptates aspernatur
-        animi.
+        1. Lorem ipsum dolor sit amet consectetur adipisicing elit.<br>
+        2. Minima ex nisi quas, maiores optio, consectetur iure.<br>
+        3. debitis perspiciatis cum, laboriosam vitae! <br>
+        4. architecto labore dicta error voluptates aspernatur.<br>
       </p>
     </div>
   </section>
-
   <section class="page-section" id="work">
     <h2>Work</h2>
     <div class="flex-container">
-
-      <!-- START OF WORK -->
-      <!-- P1 -->
-      <a href="https://vlsulliv.github.io/note-taker/" target="_blank" text="Hello, this is the tooltip"
-        class="project1 flex-item" id="note-taker">
+      <a class="p1 projects" href="https://vlsulliv.github.io/note-taker/" target="_blank">
         <div>
-          <h3>Work Day Scheduler</h3>
+          <h3>Note Taker</h3>
         </div>
       </a>
-      <!-- P1 -->
-      <!-- P2 -->
-      <a href="https://vlsulliv.github.io/GenPassword/" target="_blank" class="project2 flex-item" id="gen-password">
+      <a class="p2 projects" href="https://vlsulliv.github.io/GenPassword/" target="_blank">
         <div>
           <h3>Password Generator</h3>
         </div>
       </a>
-      <!-- P2 -->
-      <!-- P3 -->
-      <a href="https://vlsulliv.github.io/Project-1/" target="_blank" class="project3 flex-item"
-        id="dynamite-recipes">
+      <a class="p3 projects" href="https://vlsulliv.github.io/Project-1/" target="_blank">
         <div>
           <h3>Dynamite Recipes</h3>
         </div>
       </a>
-      <!-- P3 -->
-      <!-- P4 -->
-      <a href="https://vlsulliv.github.io/WeatherDashboard/" target="_blank" class="project4 flex-item"
-        id="weather-dashboard">
+      <a class="p4 projects" href="https://vlsulliv.github.io/WeatherDashboard/" target="_blank">
         <div>
           <h3>Weather Dashboard</h3>
         </div>
       </a>
-      <!-- P4 -->
-      <!-- P5 -->
-      <a href="https://vlsulliv.github.io/work-day-scheduler/" target="_blank" class="project5 flex-item"
-        id="scheduler">
+      <a class="p5 projects" href="https://vlsulliv.github.io/work-day-scheduler/" target="_blank">
         <div>
           <h3>Day Scheduler</h3>
         </div>
       </a>
-      <!-- P5 -->
-      <!-- END OF WORK -->
-
-    </div>
   </section>
-
   <!-- FOOTER -->
   <section class="page-section contact" id="contact">
     <h2>Contact Me</h2>
-    <div>
+    <div class="links">
       <address>
-        <a href="tel:281-330-8004">Phone</a>
+        <a href="tel:281-330-8004"><h3>Phone</h3></a>
         <a href="mailto:vlsullivanhou@gmail.com"><h3>Email</h3></a>
         <a href="https://www.github.com/vlsulliv"><h3>GitHub</h3></a>
         <a href="https://www.linkedin.com/in/vlsullivan/"><h3>Linkedin</h3></a>
@@ -108,7 +85,7 @@
       </address>
     </div>
   </section>
-  </main>
+</main>
 
   <script src="./assets/js/moment-with-locales.js"></script>
   <script src="./assets/js/r.js"></script>
