@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital@1&family=Vollkorn&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital@1&family=Roboto+Mono&display=swap');
 
 :root {
   --primary:rgba(28, 29, 33, 1);
@@ -12,12 +12,12 @@
 
 * {
   box-sizing: border-box;
+	font-family: 'Roboto Mono', monospace;
 }
 
 body {
   margin: 0;
   padding: 0;
-  font-family: 'Roboto Mono', monospace;
   color: var(--primary);
   background-color: var(--light);
   line-height: 1.5;
@@ -79,25 +79,7 @@ nav a:hover {
 	color: var(--primary);
 }
 
-/* .hero {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("photographer.jpg");
-  Set a specific height */
-  /* height: 750px; */
-	/* max-height: 600px;
-	justify-content: center;
-	display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
-	text-align: center; */
-  /* Position and center the image to scale nicely on all screens */
-  /* background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
-} */
-
 .hero text {
-	/* max-height: 120px; */
 	justify-content: center;
 	display: flex;
 	flex-direction: row;
@@ -115,11 +97,9 @@ nav a:hover {
 	font-family: Sans;
 }
 
-
-/* main {
-	margin-top: 20px;
-	margin-bottom: 45px;
-} */
+h2 {
+	font-size: 22px;
+}
 
 /***************************
 			HERO IMG
@@ -128,7 +108,7 @@ nav a:hover {
 .hero {
 	background: rgb(68, 88, 120);
 	background-image: url("../img/be_someone.png");
-	/* linear-gradient(180deg, var(--secondary) 0%,; */
+	/* linear-gradient(180deg, var(--secondary) 0%; */
 	background-size: cover;
 	background-position: center;
 	background-blend-mode: soft-light;
@@ -140,20 +120,7 @@ nav a:hover {
 	align-items: flex-end;
 	text-align: right;
 	box-shadow: 20px 10px 10px grey;
-	/* height: 1000vw; */
 }
-
- 
-/* .hero herotext {
-	background-color: var(--secondary);
-	color: var(--tertiary);
-	flex: 0 0 90%;
-	margin: 0;
-	padding: 5px 10px;
-	font-size: 2.3rem;
-	line-height: 1.2;
-	display: inline;
-} */
   
 /***************************
    	  About Me
@@ -195,7 +162,8 @@ h2 {
   text-align: right;
   padding-right: 20px;
   border-right: 4px solid var(--primary);
-  font-size: 3vw;
+  font-size: 2vw;
+	/* font-size: 30px; */
   line-height: 1.1;
 }
   
@@ -206,7 +174,6 @@ h2 {
 .page-section > div {
   flex: 0 0 77%;
 }
-
 
 /***************************
     	PROJECTS
@@ -233,11 +200,10 @@ h2 {
 .flex-container {
 	display: flex;
 	flex-wrap: wrap;
-	/* justify-content: center; */
 }
 
 .projects:first-child {
-	/* min-height: 300px; */
+	min-width: 800px;
 	flex-basis: 600%;
 	min-width: "44";
 }
@@ -250,7 +216,6 @@ h2 {
 .projects div {
 	background-color: var(--secondary);
 	flex-basis: 600%;
-	/* padding: 8px 10px; */
 	flex-basis: 600%;
 }
 
@@ -293,18 +258,10 @@ h2 {
 
 .p1 {
 	background-image: url("../img/note-taker.png");
-	/* border-radius: 0.5rem 0.5rem 0 0; */
-  /* object-fit: cover;
-  aspect-ratio: 2/3; */
-	/* margin-top:25; */
-	/* width: 40%; */
-	/* max-width:200px; */
 	max-height:100px;
 	width: auto ;
 	max-width: 100% ;
-	/* height: auto ; */
 	max-width:415px;
-	/* max-height:100px; */
 	height:50%;
 }
 
@@ -339,6 +296,3 @@ h2 {
 /***************************
     NAV HANDLING
 ***************************/
-/* .text {color:#5d8aa8;}
-.background {background-color:#5d8aa8;}
-.border {border:1px solid #5d8aa8;} */
